@@ -5,6 +5,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.ArrayList;
 
 public class Utility {
 
@@ -45,6 +47,22 @@ public class Utility {
         
         
         return longWord;
+    }
+
+
+    public static int[] withoutTen(int[] nums){
+
+        for(int count = 0; count < nums.length-1; count++){
+
+            if(nums[count] == 10){
+                nums[count] = nums[count+1];
+                nums[nums.length-1] = 0;
+
+            }
+
+        }
+
+        return nums;
     }
     
 }
