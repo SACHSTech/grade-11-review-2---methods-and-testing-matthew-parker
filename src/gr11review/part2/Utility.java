@@ -14,7 +14,7 @@ public class Utility {
         
         boolean why = false;
 
-        for(int i = str.length(); i >= 0; i--){
+        for(int i = str.length()-1; i >= 0; i--){
             if(str.charAt(i) == 'y'){
                 why = true;
             }
@@ -22,10 +22,10 @@ public class Utility {
             if(str.charAt(i) == 'x' && why == false){
                 return false;
             }
-
         }
-        
         return true;
+
+        
     }
 
     public static String longestWord(String filenametxt) throws IOException{
@@ -34,17 +34,19 @@ public class Utility {
         String longWord = "";
         String line = text.readLine();
 
+
         while(line != null){
 
-            line = text.readLine();
-            
-            if(line.length()>longWord.length()){
-                line = longWord;
+            if(line.length() > longWord.length()){
+
+                line = (longWord);
+
             }
+            
+            line = text.readLine();
         }
 
         text.close();
-        
         
         return longWord;
     }
@@ -64,5 +66,9 @@ public class Utility {
 
         return nums;
     }
-    
+    public static boolean linearIn(int[] outer, int[] inner){
+
+
+        return true;
+    }
 }
