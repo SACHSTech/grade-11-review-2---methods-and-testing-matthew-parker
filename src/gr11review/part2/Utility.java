@@ -31,7 +31,7 @@ public class Utility {
     public static String longestWord(String filenametxt) throws IOException{
         BufferedReader text = new BufferedReader(new FileReader(filenametxt));
 
-        String longWord = "";
+        String longWord = " ";
         String line = text.readLine();
 
 
@@ -39,8 +39,7 @@ public class Utility {
 
             if(line.length() > longWord.length()){
 
-                line = (longWord);
-
+                longWord = line;
             }
             
             line = text.readLine();
@@ -66,9 +65,27 @@ public class Utility {
 
         return nums;
     }
+    
     public static boolean linearIn(int[] outer, int[] inner){
 
+        int counter = 0;
 
-        return true;
+        for (int outerCount = 0; outerCount < outer.length-1; outerCount++){
+            for (int innerCount = 0; innerCount < inner.length-1; innerCount++){
+
+                if(outer[outerCount] == inner[innerCount]){
+                    counter++;
+                }
+
+            }
+
+        }
+
+        if(counter == inner.length-1){
+            return true;
+        }
+
+
+        return false;
     }
 }
