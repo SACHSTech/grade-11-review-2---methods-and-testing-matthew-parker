@@ -3,8 +3,10 @@ package gr11review.part2;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
+import org.junit.Assert;
 
 import gr11review.part2.Utility;
 
@@ -20,11 +22,11 @@ public class UtilityTest{
     }
 
 
-    /**
+    
     @Test
     void withoutTenTest1(){
-        assertEquals("1, 2, 0, 0", Utility.withoutTen());
+     
     }
-    */
+    
   
 }
