@@ -107,12 +107,11 @@ public class Utility {
 
                 if(outer[outerCount] == inner[innerCount]){
                     dupe = true;
+                    if(dupe = true){
+                        counter++;
+                        dupe = false;
+                    }
                 }
-            }
-
-            if(dupe = true){
-                counter++;
-                dupe = false;
             }
         }
 
