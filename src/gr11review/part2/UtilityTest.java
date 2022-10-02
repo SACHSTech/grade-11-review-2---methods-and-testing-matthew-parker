@@ -20,7 +20,9 @@ public class UtilityTest{
     int[] outer = {1, 2, 4, 6};
     int[] inner = {2, 4};
 
+    //2D array for 
     int[][] arr = {{1,1,1,}, {2,2,2}, {3,3,3}};
+    int[][] invertArr = {{1,2,3},{1,2,3},{1,2,3}};
 
     //Test for xyBalance
     @Test
@@ -44,6 +46,9 @@ public class UtilityTest{
     void linearInTest1(){
         assertEquals(true, Utility.linearIn(outer, inner));
     }
-    
+    @Test
+    void invertTest1(){
+        assertArrayEquals(invertArr, Utility.invert(arr));
+    }
   
 }

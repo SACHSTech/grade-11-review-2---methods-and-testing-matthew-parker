@@ -99,14 +99,19 @@ public class Utility {
     
     public static boolean linearIn(int[] outer, int[] inner){
 
+        //set variables
         int counter = 0;
         boolean dupe = false;
 
+        //loop to run matching numbers code
         for (int outerCount = 0; outerCount < outer.length-1; outerCount++){
             for (int innerCount = 0; innerCount < inner.length-1; innerCount++){
 
+                //checks for matching numbers
                 if(outer[outerCount] == inner[innerCount]){
                     dupe = true;
+                    
+                    //check for dupe numbers
                     if(dupe = true){
                         counter++;
                         dupe = false;
@@ -115,6 +120,7 @@ public class Utility {
             }
         }
 
+        //checks to see if all numbers match
         if(counter == inner.length-1){
             return true;
         }
@@ -122,9 +128,20 @@ public class Utility {
     }
 
     public static int[][] invert(int[][] arr){
-        
-        
-        return true;
+
+        //make new 2d array to copy to
+        int [][] invertArr = new int[arr.length][arr.length];
+
+        //loops through the array to count row and columns
+        for(int rowCount = 0; rowCount< arr.length; rowCount++){
+            for(int colCount = 0; colCount<arr.length;colCount++){
+
+                //copy original array row as columns and columns as rows
+                invertArr[rowCount][colCount] = arr[colCount][rowCount];
+            }
+        }
+        //returns new array
+        return invertArr;
     }
 }
 
