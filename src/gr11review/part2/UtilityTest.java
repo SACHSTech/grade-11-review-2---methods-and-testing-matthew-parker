@@ -16,8 +16,11 @@ public class UtilityTest{
     int[] nums = {10, 2, 10};
     int[] numAnswer = {2, 0, 0};
     
+    //Array for linearInTest
     int[] outer = {1, 2, 4, 6};
     int[] inner = {2, 4};
+
+    int[][] arr = {{1,1,1,}, {2,2,2}, {3,3,3}};
 
     //Test for xyBalance
     @Test
