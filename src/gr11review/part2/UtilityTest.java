@@ -42,10 +42,13 @@ public class UtilityTest{
         assertArrayEquals(numAnswer, Utility.withoutTen(nums));  
     }
 
+    //Test for linearIn
     @Test
     void linearInTest1(){
         assertEquals(true, Utility.linearIn(outer, inner));
     }
+    
+    //Test for invertTest
     @Test
     void invertTest1(){
         assertArrayEquals(invertArr, Utility.invert(arr));

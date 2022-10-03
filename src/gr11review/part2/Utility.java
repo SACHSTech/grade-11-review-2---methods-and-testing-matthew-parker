@@ -97,6 +97,11 @@ public class Utility {
         return numsTenless;
     }
     
+    /**
+     * @param outer the outer array
+     * @param inner the inner array
+     * @return returns if it is true or false
+     */
     public static boolean linearIn(int[] outer, int[] inner){
 
         //set variables
@@ -127,6 +132,10 @@ public class Utility {
         return false;
     }
 
+    /**
+     * @param arr reads 2d array
+     * @return returns the copied array with the row and column switched
+     */
     public static int[][] invert(int[][] arr){
 
         //make new 2d array to copy to
